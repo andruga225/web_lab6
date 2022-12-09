@@ -19,7 +19,7 @@ const BookItem = (props) => {
         <div className={"book"}>
             <div className={"book__content"}>
                 <strong>{props.book.name}, {props.book.year}</strong>
-                <div>
+                <div >
                     {props.book.authors.map((author) =>
                     <div>{author.name}</div>)}
                 </div>

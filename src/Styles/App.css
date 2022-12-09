@@ -59,3 +59,41 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.author_grid{
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-auto-rows: auto;
+}
+
+.author{
+  display: flex;
+  padding: 15px;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author__btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: space-between;
+  background-color: #ec5990;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-bar-links{
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+}

@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
-import BookItem from "./BookItem";
+import AuthorItem from "./AuthorItem";
 
-const BookList = ({books, update, changeClick}) => {
+const AuthorList = ({authors, update, changeClick}) => {
     const [updateLs, setUpdate] = useState(0)
     const updateList = () => {
         update()
         setUpdate(1-updateLs)
-
     }
 
     const changeCl = (id) => {
@@ -16,9 +15,9 @@ const BookList = ({books, update, changeClick}) => {
 
     return (
         <div>
-            {books.map((book) => <BookItem updateList={updateList} changeClick={changeCl} book={book} key={book.id}/>)}
+            {authors.map((author) => <AuthorItem updateList={updateList} changeClick={changeCl} author={author} key={author.id}/>)}
         </div>
     );
 };
 
-export default BookList;
+export default AuthorList;

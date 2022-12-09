@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import Service from "../API/Service";
-import BookList from "../Components/BookList";
-import Select from "react-select/base";
 import Modal from "../Components/Modal/Modal";
 import CreateBook from "../Components/CreateBookForm/CreateBook";
+import BookList from "../Components/BookList";
 
-const UnreadBooksPage = () => {
+const ReadiedBooksPage = () => {
     const [books, setBooks] = useState([])
     const [update, setUpdate] = useState(0)
     const [languages, setLanguages] = useState([])
@@ -14,7 +13,7 @@ const UnreadBooksPage = () => {
     const [authors, setAuthors] = useState([])
     const [isCreate, setIsCreate] = useState(true)
     const [bookToChange, setBookToChange] = useState()
-    const isReadied = false
+    const isReadied = true
     const [author, setAuthor] = useState('')
 
     async function fetchBooks(){
@@ -84,7 +83,7 @@ const UnreadBooksPage = () => {
                 setAuthor(e.target.value)
             }}  className={"input-style"} placeholder={"Имя автора"}/>
             <button className={"btn-style"} onClick={() => {setModal(true)
-                                                            setIsCreate(true)}}>
+                setIsCreate(true)}}>
                 Добавить книгу
             </button>
             <BookList update={updateList} changeClick={changeCl} books={books}/>
@@ -92,4 +91,4 @@ const UnreadBooksPage = () => {
     )
 };
 
-export default UnreadBooksPage;
+export default ReadiedBooksPage;

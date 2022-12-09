@@ -1,5 +1,6 @@
 import React from 'react';
 import cl from './Modal.module.css'
+import {toast} from "react-toastify";
 
 const Modal = ({children, visible, setVisible}) => {
 
@@ -9,7 +10,7 @@ const Modal = ({children, visible, setVisible}) => {
     }
 
     return (
-        <div className={rootClasses.join(' ')} onClick={() => setVisible(false)}>
+        <div className={rootClasses.join(' ')} onClick={() => {toast.dismiss(); setVisible(false)}}>
             <div className={cl.ModalContent} onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
