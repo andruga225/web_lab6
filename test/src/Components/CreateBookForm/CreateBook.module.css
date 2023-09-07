@@ -1,0 +1,82 @@
+/*.input {*/
+/*    border-radius: 8px;*/
+/*    width: 100%;*/
+/*    height: 50px;*/
+/*    border: 1px solid #ec5990;*/
+/*    outline: none;*/
+/*    margin: 5px;*/
+/*}*/
+
+/*.form{*/
+/*    margin: 0 auto;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+
+/*    padding: 8px;*/
+/*}*/
+
+/*.select{*/
+/*    border-radius: 8px;*/
+/*    width: 100%;*/
+/*    height: 50px;*/
+/*    border: 1px solid #ec5990;*/
+/*    outline: none;*/
+/*    margin: 5px;*/
+/*}*/
+
+/*.multiSelect{*/
+/*    border-radius: 8px;*/
+/*    width: 100%;*/
+/*    height: 100px;*/
+/*    border: 1px solid #ec5990;*/
+/*    outline: none;*/
+/*    margin: 5px;*/
+/*}*/
+
+/*.label{*/
+/*    color: #ec5990;*/
+/*}*/
+
+input {
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ec5990;
+    outline: none;
+    margin: 5px;
+}
+
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px;
+}
+
+select{
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ec5990;
+    outline: none;
+    margin: 5px;
+}
+
+.label{
+    left: 0;
+    color: #ec5990;
+}
+
+.select{
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ec5990;
+    outline: none;
+    margin: 5px;
+}

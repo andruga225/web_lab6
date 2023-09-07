@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Div 1`] = `<div />`;
+
+exports[`Label 1`] = `<label />`;
+
+exports[`P 1`] = `<p />`;

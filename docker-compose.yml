@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  frontend: 
+    build: ./test 
+    ports: 
+      - "3000:3000" 
+    container_name: frontend-docker
+    restart: always 
+    links:
+      - backend 
+  backend:
+    build: ./web_lab5
+    ports:
+      - "5000:5000"
+    container_name: backend-docker
+    restart: always
+    links:
+      - db
+  db:
+    image: postgres:13
+    environment:
+        PGPASSWORD: postgres
+    volumes:
+    - ../2. Init Database:/docker-entrypoint-initdb.d
+    - .:/var/lib/postgresql/data
+    ports:
+    - "5432:5432"

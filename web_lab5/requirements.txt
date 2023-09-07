@@ -1,0 +1,12 @@
+alembic==1.8.1
+anyio==3.6.2
+base==1.0.4
+certifi==2022.6.15
+starlette
+fastapi
+python-dotenv
+uvicorn
+sqlalchemy
+psycopg2
+alembic
+sqlalchemy_utils
